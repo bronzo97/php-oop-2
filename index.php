@@ -11,6 +11,6 @@ class Cart extends Products {
 
 }
 
-$utente1 = new Toys('red', 'rubber', 'ball', 12);
+$utente1 = new Toys('ball', 12, 'red', 'rubber');
 
 var_dump($utente1);

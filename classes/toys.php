@@ -6,8 +6,11 @@ class Toys extends Products {
     public $material = '';
     
 
-function __construct($_color, $_material )
+function __construct($_name, $_price, $_color, $_material )
 {
+
+    parent::__construct($_name, $_price);
+
     $this->setColor($_color);
     $this->setMaterial($_material);
     

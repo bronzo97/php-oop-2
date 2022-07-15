@@ -5,19 +5,15 @@ class Toys extends Products {
     public $color = '';
     public $material = '';
     
+    function __construct($_name, $_price, $_color, $_material )
+    {
 
-function __construct($_name, $_price, $_color, $_material )
-{
+        parent::__construct($_name, $_price);
 
-    parent::__construct($_name, $_price);
-
-    $this->setColor($_color);
-    $this->setMaterial($_material);
-    
-}
-
-
-
+        $this->setColor($_color);
+        $this->setMaterial($_material);
+        
+    }
 
     /**
      * Get the value of color

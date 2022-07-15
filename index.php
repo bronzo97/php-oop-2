@@ -5,12 +5,9 @@ require "classes/user.php";
 require "classes/payment_method.php";
 
 
-class Cart extends Products {
+$prodotto1 = new Toys('ball', 12, 'red', 'rubber');
+$prodotto2 = new Food('crocchette', 4.99, '05-23', ['chicken', 'meat', 'flour']);
 
 
-
-}
-
-$utente1 = new Toys('ball', 12, 'red', 'rubber');
-
-var_dump($utente1);
+var_dump($prodotto1);
+var_dump($prodotto2);

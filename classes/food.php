@@ -6,10 +6,10 @@ class Food extends Products {
     protected $ingredients = '';
    
 
-    function __construct($_expire, $_ingredients) 
+    function __construct($_name, $_price, $_expire, $_ingredients) 
     {   
-        
-    
+
+        parent::__construct($_name, $_price);    
     
             $this->setExpire($_expire);
             $this->setIngredients($_ingredients);

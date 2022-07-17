@@ -8,8 +8,10 @@ class Costumer {
     protected $costumerName = '';
     protected $costumerLastName = '';
     protected $registered = false;
-    public Cart $cart;
+
     public PaymentHandler $paymentHandler;
+    public Cart $cart;
+
 
     function __construct($_costumerName, $_costumerLastName)
     {
